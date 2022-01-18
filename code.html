@@ -1,0 +1,153 @@
+bscf=
+<!doctype html>
+<html lang="en" class="h-100">
+
+<!--------------------------------------------------------------------------------------------------------------------------
+    Head
+---------------------------------------------------------------------------------------------------------------------------->
+
+<head>
+    <title>APP NAME: A JS PROJECT</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!--Style sheet Link-->
+    <link rel="stylesheet" href="/CSS/site.css">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
+
+    <!--Favicon-->
+    <link rel="icon" tpye="img/png" href="/IMG/favicon_io (2)/favicon-32x32.png">
+
+    <link rel="stylesheet" href="CSS/prism.css">
+
+</head>
+
+<!-----Body Start----->
+
+<body class="d-flex flex-column h-100">
+
+    <!--------------------------------------------------------------------------------------------------------------------------
+    Navbar
+---------------------------------------------------------------------------------------------------------------------------->
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top navbarBG">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/IMG/MspectreMark.svg" alt="App Name Place Hokder" height="24"
+                    class="d-inline-block align-text-top">
+                APP NAME
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navText" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="app.html">The App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="code.html">The Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" taget="_blank" href="https://github.com/Nicholas-A-Payne">The Repo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank"
+                            href="https://nicholas-payne-devportfolio.netlify.app/#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--------------------------------------------------------------------------------------------------------------------------
+    Main
+---------------------------------------------------------------------------------------------------------------------------->
+
+    <main class="flex-shrink-0">
+        <div class="container">
+            <h2 class="border-1 border-bottom border-dark"> The Code</h2>
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <pre class="line-numbers"><code class="language-js"> // Dispalying Darren to unsuspecting Victims
+ function getMessage(){
+
+ let userMessage = document.getElementById("message").value;
+
+ Swal.fire(
+'The App Title',
+userMessage,
+'question'
+ );
+ console.log(userMessage);
+};
+                        </code>
+                    </pre>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <p>The code is structured in one function. it accesses the users input the displays a Sweetalert funtion.</p>
+                    <h5>getMessages</h5>
+                    <p>Prints the user's inputted message.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!--------------------------------------------------------------------------------------------------------------------------
+    Footer
+---------------------------------------------------------------------------------------------------------------------------->
+
+    <footer class="footer mt-auto py-3 sticky-footer">
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-lg-3 gy-2">
+                <div class="col d-flex justify-content-center justify-content-lg-start order-last order-lg-first">
+                    <div>
+                        <span class="text-muted"> &copy; 2022 </span><span>Nicholas Payne </span>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center align-itmes-center">
+                    <img src="/IMG/MarkSpectre_WhtLogo.svg" alt="Place Holder Logo" height="24">
+                </div>
+                <div class="col d-flex align-items-center justify-content-center justify-content-lg-end">
+                    <div class="row">
+                        <div class="col socials px-4">
+                            <a href="#">
+                                <i class="fab fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="col socials">
+                            <a href="#">
+                                <i class="fab fa fa-github fa-2x" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+
+<script src="/JS/prism.js"></script>
+
+</body>
+<!-----End Body----->
+
+</html>

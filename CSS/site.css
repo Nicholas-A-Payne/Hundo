@@ -1,0 +1,104 @@
+ /*-------------------------------------------------------------------------------------------------------------------------
+  Root
+ ---------------------------------------------------------------------------------------------------------------------------*/
+ 
+ :root {
+     --NP-dark-color: #212121;
+     --NP-light-color: #eeee;
+     --NP-primary-color: #5208b9;
+    --NP-secondary-color: #8f028f;
+ }
+
+
+/*--------------------------------------------------------------------------------------------------------------------------
+ Main
+----------------------------------------------------------------------------------------------------------------------------*/
+ 
+main>.container {
+     padding: 60px 15px 0;
+     margin-bottom: 5rem;
+     min-height: 90vh;
+ }
+
+.jsIcon{
+    color: #e2d304;
+}
+
+.bsIcon{
+    color: var(--NP-secondary-color);
+}
+
+.htmlIcon{
+    color: #ff4500;
+}
+
+.cssIcon{
+    color: #0b52d6;
+}
+
+.checkIcon{
+    color:var(--NP-secondary-color)
+}
+
+.btn-outline-primary{
+    color: var(--NP-dark-color);
+    border-color: var(--NP-secondary-color) !important;
+}
+
+.btn-outline-primary:hover, 
+.btn-outline-primary:active,
+.btn-outline-primary:focus{
+    border-color: var(--NP-primary-color) !important;
+    background-color: var(--NP-secondary-color);
+}
+
+.btn-primary{
+    color: white !important;
+    background-color: var(--NP-secondary-color);
+    border: var(--NP-primary-color);
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    filter: brightness(1.1) !important;
+    border-color: var(--NP-primary-color) !important;
+    background-color: var(--NP-secondary-color);
+}
+
+ 
+ /*-------------------------------------------------------------------------------------------------------------------------
+    NavBar
+ ---------------------------------------------------------------------------------------------------------------------------*/
+ 
+ .navbarBG {
+     background-color: var(--NP-dark-color);
+ }
+
+
+/*--------------------------------------------------------------------------------------------------------------------------
+ Footer
+----------------------------------------------------------------------------------------------------------------------------*/
+  .sticky-footer {
+      position: sticky;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      color: var(--NP-light-color);
+  }
+
+  .footer {
+      background-color: var(--NP-dark-color);
+      padding: 1rem;
+  }
+
+  footer .socials>a {
+      color: var(--NP-light-color);
+      opacity: .75;
+  }
+
+  footer .socials>a:hover {
+      color: var(--NP-secondary-color);
+      opacity: .90;
+  }
