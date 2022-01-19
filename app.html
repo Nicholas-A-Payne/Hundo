@@ -7,7 +7,7 @@ bscf=
 ---------------------------------------------------------------------------------------------------------------------------->
 
 <head>
-    <title>APP NAME: A JS PROJECT</title>
+    <title>Hundo: Coding Project by Nicholas Payne</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -39,9 +39,9 @@ bscf=
     <nav class="navbar navbar-expand-md navbar-dark fixed-top navbarBG">
         <div class="container-fluid">
             <a class="navbar-brand" href="/index.html">
-                <img src="/IMG/MspectreMark.svg" alt="App Name Place Hokder" height="24"
+                <img src="/IMG/Corvid-white.PNG" alt="App Name Place Hokder" height="35"
                     class="d-inline-block align-text-top">
-                APP NAME
+                Hundo
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,12 +76,44 @@ bscf=
 ---------------------------------------------------------------------------------------------------------------------------->
 
     <main class="flex-shrink-0">
-        <div class="container">
-            <div>
-                <h1>APP UI WILL GO HERE</h1>
-                <input id="message" name="message" placeholder="Enter A Message">
-                <div class="py-2">
-                <button id="btnSubmit" class="btn btn-primary">Display Message</button>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col">
+                    <h1>Hundo: A Coding Challenge</h1>
+                    <h4 class="lead"> 
+                        Live life one loop at a time. A JS application using loops. 
+                        Write a program that displays from 0 to 100. Diplsay even numbers in <span class="fw-bold">BOLD</span>.
+                    </h4>
+                    <h2 class="mt-5 border-bottom border-5 border-dark">Instructions</h2>
+                    <p>Enter a starting value and an ending value. Press the button and the values will appear.</p>
+                </div>
+                <div class="col">
+                    <div>
+                        <H5>Enter Values</H5>
+                        <form class="row">
+                            <div class="col">
+                                <label for="startValue" class="form-label">Start Value</label>
+                                <input id="startValue" type="number" class="form-control" placeholder="Start Value Here" value=0 
+                                aria-label="Start Value">
+                            </div>
+                            <div class="col">
+                                <label for="endValue" class="form-label">End Value</label>
+                                 <input id="endValue" type="number" class="form-control"
+                                     placeholder="End Value Here" value=100 aria-label="End Value">
+                            </div>
+                            <div class="col-12 d-flex justify-content-start justify-content-lg-end my-2">
+                                <button id="btnSubmit" type="button" class="btn btn-primary btn-large">Display the Hundo</button>
+                            </div>
+                        </form>
+                        <h2 class="mt-5 border-bottom border-5 border-dark">Results</h2>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-striped table-sm">
+                                <tbody id="results">
+                                    <!------Content Goes Here------>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -131,7 +163,7 @@ bscf=
     <!-----Java Link----->
     <script src="/JS/site.js"></script>
     <script>
-        document.getElementById("btnSubmit").addEventListener("click", getMessage);
+        document.getElementById("btnSubmit").addEventListener("click", getValues2);
     </script>
 </body>
 <!-----End Body----->
