@@ -7,7 +7,7 @@ bscf=
 ---------------------------------------------------------------------------------------------------------------------------->
 
 <head>
-    <title>APP NAME: A JS PROJECT</title>
+    <title>Hundo: A Coding Challenge</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -41,15 +41,15 @@ bscf=
     <nav class="navbar navbar-expand-md navbar-dark fixed-top navbarBG">
         <div class="container-fluid">
             <a class="navbar-brand" href="/index.html">
-                <img src="/IMG/MspectreMark.svg" alt="App Name Place Hokder" height="24"
+                <img src="/IMG/Corvid-Purple-White.PNG" alt="NPraven" height="35"
                     class="d-inline-block align-text-top">
-                APP NAME
+                Hundo
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse navText" id="navbarCollapse">
+            <div class="collapse navbar-collapse navText mb-1" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
                         <a class="nav-link" href="/index.html">Home</a>
@@ -82,18 +82,68 @@ bscf=
             <h2 class="border-1 border-bottom border-dark"> The Code</h2>
             <div class="row">
                 <div class="col-12 col-lg-8">
-                    <pre class="line-numbers"><code class="language-js"> // Dispalying Darren to unsuspecting Victims
- function getMessage(){
+                    <pre class="line-numbers"><code class="language-js"> 
+//Program Entry Point
+function getValues2() {
+    
+    let startValue = document.getElementById("startValue").value;
+    let endValue = document.getElementById("endValue").value;
 
- let userMessage = document.getElementById("message").value;
+    startValue = parseInt(startValue);
+    endValue = parseInt (endValue);
+   
+    //check to see if they are IN FACT an integer
+    if (Number.isInteger(startValue) && Number.isInteger(endValue)) {
 
- Swal.fire(
-'The App Title',
-userMessage,
-'question'
- );
- console.log(userMessage);
-};
+        //generate a list of numbers
+        let numbers = generateNumbers(startValue, endValue);
+        
+        //display a list of numbers
+        displayNumbers(numbers);
+
+    }
+    else {
+        Swal.fire({
+             icon: 'error',
+             title: 'oops...',
+             text: 'Only integers are allowed for Hundo!'
+        }
+        )
+    }
+}
+
+function generateNumbers(start, end){
+
+        let numbers= [];
+        for (let index = start; index <= end; index++){
+            numbers.push(index);
+        }
+
+        return numbers;
+
+}
+
+function displayNumbers(numbers){
+
+    let templateRows = "";
+    let className = "";
+    for (let index = 0; index < numbers.length; index++){
+
+        let number = numbers[index];
+        
+        if (number % 2 == 0 ){
+            className = "even";
+        }
+        else{
+            className = "odd";
+        }
+
+        let row =  `<tr><td class="${className}">${number}</td></tr>`;
+        templateRows += row;
+    }
+
+    document.getElementById("results").innerHTML = templateRows;
+}
                         </code>
                     </pre>
                 </div>
