@@ -13,7 +13,6 @@
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
     color: var(--NP-primary-color);
@@ -110,6 +109,10 @@ main>.container {
   footer .socials>a:hover {
       color: var(--NP-secondary-color);
       opacity: .90;
+  }
+
+  .btmLogo{
+      font-family: 'Limelight', cursive;
   }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------
